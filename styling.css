@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'digitalfont';
+  src: url('fonts/digital7.ttf');
+}
+
+body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(images/bg.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/*title*/
+#header {
+  text-align: center;
+  font-size: 7vw;
+}
+
+/*Lap*/
+#lap {
+  text-align: right;
+  font-size: 4vw;
+  padding-right: 15px;
+}
+
+/*Time*/
+#time {
+  text-align: center;
+
+  font-size: 10vw;
+}
+
+/*Buttons*/
+#controlsContainer {
+  margin-bottom: 100px;
+}
+
+.control {
+  color: #fff;
+  background-color: rgb(89, 142, 255);
+  height: 10vw;
+  width: 10vw;
+  border-radius: 100%;
+  text-align: center;
+  padding: 25% 0;
+  font-size: 2.5vw;
+  cursor: pointer;
+  box-shadow: 0px 5px 5px rgba(13, 18, 29, 1);
+  position: relative;
+  transition: all 0.2s;
+}
+
+.control:hover {
+  background-color: #fff;
+  color: rgb(89, 142, 255);
+}
+
+.control:active {
+  box-shadow: 0px 0px;
+  top: 4px;
+}
+
+/*laps*/
+#laps {
+  max-height: 270px;
+  overflow-y: scroll;
+}
+
+.lap {
+  height: 50px;
+  border-bottom: 1px solid white;
+  margin: 15px;
+}
+
+.laptimetitle {
+  font-size: 1.5em;
+  float: left;
+}
+
+.laptime {
+  font-size: 2em;
+  float: right;
+}
